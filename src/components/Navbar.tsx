@@ -38,7 +38,7 @@ export default function Navbar() {
             </ul>
             <ul className="hover:scale-110 transition-all">
               <a
-                href="#"
+                href="/relaksasi-audio"
                 className="hover:underline hover:decoration-primary hover:underline-offset-8 transition-all"
               >
                 Relaksasi Audio
@@ -46,7 +46,7 @@ export default function Navbar() {
             </ul>
             <ul className="hover:scale-110 transition-all">
               <a
-                href="#"
+                href="/tentang-kami"
                 className="hover:underline hover:decoration-primary hover:underline-offset-8 transition-all"
               >
                 Tentang Kami
