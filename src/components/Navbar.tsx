@@ -2,35 +2,42 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <div>
-      <nav className="mx-[100px]">
-        <div className="flex justify-between h-[90px]">
-          <div className="w-40 h-full text-4xl leading-[90px] text-center font-bold text-blue-300">UnStress</div>
-          <div className="w-3/5">
-            <li className="flex gap-16 justify-center items-center h-full">
-              <ul className="hover:scale-105 hover:border-b-2 hover:border-black hover:pb-1 transition-all">
-                <a href="#">Beranda</a>
-              </ul>
-              <ul className="hover:scale-105 hover:border-b-2 hover:border-black hover:pb-1 transition-all">
-                <a href="#">Artikel</a>
-              </ul>
-              <ul className="hover:scale-105 hover:border-b-2 hover:border-black hover:pb-1 transition-all">
-                <a href="#">Chat Anonim</a>
-              </ul>
-              <ul className="hover:scale-105 hover:border-b-2 hover:border-black hover:pb-1 transition-all">
-                <a href="#">Relaksasi Audio</a>
-              </ul>
-              <ul className="hover:scale-105 hover:border-b-2 hover:border-black hover:pb-1 transition-all">
-                <a href="#">Tentang Kami</a>
-              </ul>
-            </li>
-          </div>
-          <div className="flex w-56 h-full justify-center items-center">
-            <button className="px-8 py-3 bg-blue-400 text-white rounded-xl w-[113px]">Masuk</button>
-          </div>
+    <nav className="shadow-md px-[100px] bg-white top-0 fixed w-full z-50">
+      <div className="flex h-[90px]">
+        <div className="text-4xl leading-[90px] text-center font-bold text-primary">UnStress</div>
+        <div className="w-3/5 grow text-lg">
+          <li className="flex gap-16 justify-center items-center h-full">
+            <ul className="hover:scale-110 transition-all">
+              <a href="#" className="hover:underline hover:decoration-primary hover:underline-offset-8 transition-all">
+                Beranda
+              </a>
+            </ul>
+            <ul className="hover:scale-110 transition-all">
+              <a href="#" className="hover:underline hover:decoration-primary hover:underline-offset-8 transition-all">
+                Artikel
+              </a>
+            </ul>
+            <ul className="hover:scale-110 transition-all">
+              <a href="#" className="hover:underline hover:decoration-primary hover:underline-offset-8 transition-all">
+                Chat Anonim
+              </a>
+            </ul>
+            <ul className="hover:scale-110 transition-all">
+              <a href="#" className="hover:underline hover:decoration-primary hover:underline-offset-8 transition-all">
+                Relaksasi Audio
+              </a>
+            </ul>
+            <ul className="hover:scale-110 transition-all">
+              <a href="#" className="hover:underline hover:decoration-primary hover:underline-offset-8 transition-all">
+                Tentang Kami
+              </a>
+            </ul>
+          </li>
         </div>
-      </nav>
-      <hr className="border-b-[3px] border-gray-200 shadow-xl" />
-    </div>
+        <div className="flex h-full items-center">
+          <button className="px-8 py-2 font-roboto bg-secondary text-white rounded-xl">Masuk</button>
+        </div>
+      </div>
+    </nav>
   );
 }
