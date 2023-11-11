@@ -1,5 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Navbar() {
   const router = useRouter();
@@ -13,44 +14,44 @@ export default function Navbar() {
         <div className="w-3/5 grow text-lg">
           <li className="flex gap-16 justify-center items-center h-full">
             <ul className="hover:scale-110 transition-all">
-              <a
-                href="\"
+              <Link
+                href="/"
                 className="hover:underline hover:decoration-primary hover:underline-offset-8 transition-all"
               >
                 Beranda
-              </a>
+              </Link>
             </ul>
             <ul className="hover:scale-110 transition-all">
-              <a
-                href="#"
+              <Link
+                href="/artikel"
                 className="hover:underline hover:decoration-primary hover:underline-offset-8 transition-all"
               >
                 Artikel
-              </a>
+              </Link>
             </ul>
             <ul className="hover:scale-110 transition-all">
-              <a
-                href="#"
+              <Link
+                href="chat-anonim"
                 className="hover:underline hover:decoration-primary hover:underline-offset-8 transition-all"
               >
                 Chat Anonim
-              </a>
+              </Link>
             </ul>
             <ul className="hover:scale-110 transition-all">
-              <a
+              <Link
                 href="/relaksasi-audio"
                 className="hover:underline hover:decoration-primary hover:underline-offset-8 transition-all"
               >
                 Relaksasi Audio
-              </a>
+              </Link>
             </ul>
             <ul className="hover:scale-110 transition-all">
-              <a
+              <Link
                 href="/tentang-kami"
                 className="hover:underline hover:decoration-primary hover:underline-offset-8 transition-all"
               >
                 Tentang Kami
-              </a>
+              </Link>
             </ul>
           </li>
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { FaInstagram } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 
@@ -29,34 +30,43 @@ export default function Footer() {
             Tautan Website
           </h1>
           <div>
-            <a href="\" className="text-tertiary-700 font-robotoSlab">
+            <Link href="/" className="text-tertiary-700 font-robotoSlab">
               Beranda
-            </a>
+            </Link>
           </div>
           <div>
-            <a href="#" className="text-tertiary-700 font-robotoSlab">
+            <Link href="/artikel" className="text-tertiary-700 font-robotoSlab">
               Artikel
-            </a>
+            </Link>
           </div>
           <div>
-            <a href="#" className="text-tertiary-700 font-robotoSlab">
+            <Link
+              href="/chat-anonim"
+              className="text-tertiary-700 font-robotoSlab"
+            >
               Chat Anonim
-            </a>
+            </Link>
           </div>
           <div>
-            <a href="#" className="text-tertiary-700 font-robotoSlab">
-              Audio Relaksasi
-            </a>
+            <Link
+              href="/relaksasi audio"
+              className="text-tertiary-700 font-robotoSlab"
+            >
+              Relaksasi Audio
+            </Link>
           </div>
           <div>
-            <a href="#" className="text-tertiary-700 font-robotoSlab">
+            <Link href="#" className="text-tertiary-700 font-robotoSlab">
               Apa Kata Mereka
-            </a>
+            </Link>
           </div>
           <div>
-            <a href="#" className="text-tertiary-700 font-robotoSlab">
+            <Link
+              href="/tentang-kami"
+              className="text-tertiary-700 font-robotoSlab"
+            >
               Tentang Kami
-            </a>
+            </Link>
           </div>
         </div>
         <div className="">
