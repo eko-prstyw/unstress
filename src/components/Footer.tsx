@@ -21,9 +21,12 @@ export default function Footer() {
             kesehatan mental dengan menyediakan alat dan dukungan yang Anda
             butuhkan...
           </p>
-          <a href="#" className="underline text-tertiary-700 text-base">
+          <Link
+            href="/tentang-kami"
+            className="underline text-tertiary-700 text-base"
+          >
             Baca Selengkapnya
-          </a>
+          </Link>
         </div>
         <div className="w-56">
           <h1 className="text-3xl mb-2 font-bold text-white font-roboto">
@@ -55,11 +58,7 @@ export default function Footer() {
               Relaksasi Audio
             </Link>
           </div>
-          <div>
-            <Link href="#" className="text-tertiary-700 font-robotoSlab">
-              Apa Kata Mereka
-            </Link>
-          </div>
+
           <div>
             <Link
               href="/tentang-kami"

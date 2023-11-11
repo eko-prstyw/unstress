@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import aboutus from "@/images/tentang-kami-img/about-us.svg";
@@ -11,6 +12,7 @@ import person4 from "@/images/tentang-kami-img/person-4.svg";
 import person5 from "@/images/tentang-kami-img/person-5.svg";
 
 export default function index() {
+  const router = useRouter();
   return (
     <div>
       <Navbar />
@@ -28,7 +30,10 @@ export default function index() {
               mengelola, dan mengatasi stres dalam kehidupan sehari-hari. Kami
               percaya bahwa stres adalah tantangan universal yang...
             </div>
-            <button className="text-white bg-primary py-2 px-6 rounded-xl font-roboto justify-self-start">
+            <button
+              onClick={() => router.push("/")}
+              className="text-white bg-primary py-2 px-6 rounded-xl font-roboto justify-self-start"
+            >
               Lihat Semua
             </button>
           </div>

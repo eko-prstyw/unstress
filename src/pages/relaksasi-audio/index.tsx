@@ -40,7 +40,7 @@ export default function index() {
           <div className="absolute z-10 mt-[200px]">
             <Image src={vector} alt="Gambar Vector"></Image>
           </div>
-          <div className="w-[815px] h-[0px] border-2 border-primary-700 mt-[200px]"></div>
+          <div className="w-[815px] h-[0px] border-2 border-white mt-[200px]"></div>
         </div>
       </main>
       <Footer />
