@@ -1,7 +1,11 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],
@@ -22,6 +26,7 @@ const config: Config = {
       "primary-400": "#4DA8E3",
       "primary-500": "#268DD1",
       "primary-600": "#1770B2",
+      "primary-700": "#135589",
       "primary-800": "#154D77",
       "primary-900": "#174063",
       "primary-950": "#0F2A42",
