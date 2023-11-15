@@ -9,7 +9,7 @@ export default function Navbar() {
           <li className="flex gap-16 justify-center items-center h-full">
             <ul className="hover:scale-110 transition-all">
               <a href="#" className="hover:underline hover:decoration-primary hover:underline-offset-8 transition-all">
-                Beranda
+                Berand
               </a>
             </ul>
             <ul className="hover:scale-110 transition-all">
