@@ -1,13 +1,10 @@
 import React from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import DetailArticle from "@/components/DetailArticle";
 
 export default function index() {
   return (
-    <main>
-      <Navbar />
-      <div></div>
-      <Footer />
-    </main>
+    <>
+      <DetailArticle />
+    </>
   );
 }
