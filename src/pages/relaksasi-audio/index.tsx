@@ -2,7 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import ToggleSwitch from "@/components/page-relaksasi-audio/ToggleSwitch";
+import ToggleRain from "@/components/page-relaksasi-audio/ToggleRain";
+import ToggleThunder from "@/components/page-relaksasi-audio/ToggleThunder";
+import ToggleWave from "@/components/page-relaksasi-audio/ToggleWave";
+import ToggleWind from "@/components/page-relaksasi-audio/ToggleWind";
+import ToggleBird from "@/components/page-relaksasi-audio/ToggleBird";
 import bgaudio from "@/images/audio-img/audio.jpg";
 import vector from "@/images/audio-img/vector.svg";
 import icon1 from "@/images/audio-img/icon-1.svg";
@@ -44,7 +48,7 @@ export default function index() {
               <div className="my-3 text-2xl font-medium font-robotoSlab text-white">
                 Rain
               </div>
-              <ToggleSwitch />
+              <ToggleRain />
             </div>
             {/* Subsection: Thunder */}
             <div className="flex flex-col items-center">
@@ -52,7 +56,7 @@ export default function index() {
               <div className="my-3 text-2xl font-medium font-robotoSlab text-white">
                 Thunder
               </div>
-              <ToggleSwitch />
+              <ToggleThunder />
             </div>
             {/* Subsection: Wave */}
             <div className="flex flex-col items-center">
@@ -60,7 +64,7 @@ export default function index() {
               <div className="my-3 text-2xl font-medium font-robotoSlab text-white">
                 Wave
               </div>
-              <ToggleSwitch />
+              <ToggleWave />
             </div>
             {/* Subsection: Wind */}
             <div className="flex flex-col items-center">
@@ -68,7 +72,7 @@ export default function index() {
               <div className="my-3 text-2xl font-medium font-robotoSlab text-white">
                 Wind
               </div>
-              <ToggleSwitch />
+              <ToggleWind />
             </div>
             {/* Subsection: Bird */}
             <div className="flex flex-col items-center">
@@ -76,7 +80,7 @@ export default function index() {
               <div className="my-3 text-2xl font-medium font-robotoSlab text-white">
                 Bird
               </div>
-              <ToggleSwitch />
+              <ToggleBird />
             </div>
           </div>
           {/* Section: Vector Image */}

@@ -8,9 +8,12 @@ export default function Navbar() {
   return (
     <nav className="shadow-md px-[100px] bg-white top-0 fixed w-full z-50">
       <div className="flex h-[90px]">
-        <div className="text-4xl leading-[90px] text-center font-bold text-primary">
+        <button
+          onClick={() => router.push("/")}
+          className="text-4xl leading-[90px] text-center font-bold text-primary"
+        >
           UnStress
-        </div>
+        </button>
         <div className="w-3/5 grow text-lg">
           <li className="flex gap-16 justify-center items-center h-full">
             <ul className="hover:scale-110 transition-all">
