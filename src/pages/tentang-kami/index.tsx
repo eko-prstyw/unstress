@@ -19,7 +19,7 @@ export default function index() {
         TIM KAMI
       </div>
       <div className="cols-2">
-        <div className="flex mx-[100px]">
+        <div className="flex px-[100px] justify-center">
           <Image
             src={person1}
             alt="person1"
