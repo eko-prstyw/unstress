@@ -1,5 +1,4 @@
 import React from "react";
-import Layout from "../Layout";
 import { BsSearch } from "react-icons/bs";
 import { BsSortDown } from "react-icons/bs";
 import { BsArrowRight } from "react-icons/bs";
@@ -8,7 +7,7 @@ import { useRouter } from "next/router";
 export default function HomeArticle() {
   const router = useRouter();
   return (
-    <Layout>
+    <div>
       <div className="w-full h-[500px] px-[100px] mx-auto mt-36">
         <div className="flex gap-3 justify-end">
           <div className="relative">
@@ -268,6 +267,6 @@ export default function HomeArticle() {
       <br />
       <br />
       <br />
-    </Layout>
+    </div>
   );
 }
