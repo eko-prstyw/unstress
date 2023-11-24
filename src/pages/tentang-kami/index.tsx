@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import Layout from "@/components/Layout";
 import AboutUs from "@/components/page-tentang-kami/AboutUs";
 import icon from "@/images/tentang-kami-img/icon.svg";
 import person1 from "@/images/tentang-kami-img/person-1.svg";
@@ -12,8 +11,7 @@ import person5 from "@/images/tentang-kami-img/person-5.svg";
 
 export default function index() {
   return (
-    <div>
-      <Navbar />
+    <Layout>
       <AboutUs />
       <div className="text-[40px] font-bold text-center text-[#323539] font-robotoSlab leading-[48px] mb-16 mt-16">
         TIM KAMI
@@ -106,7 +104,6 @@ export default function index() {
           </div>
         </div>
       </div>
-      <Footer />
-    </div>
+    </Layout>
   );
 }

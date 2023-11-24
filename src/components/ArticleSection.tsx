@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { BsArrowRight } from "react-icons/bs";
 import Card1 from "../images/card-img/card1.jpeg";
 
-export default function Article() {
+export default function ArticleSection() {
   const router = useRouter();
   return (
     <div className="max-w-full pt-28 px-[100px] bg-[#f2f2f2]">

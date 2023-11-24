@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Header";
 import Footer from "@/components/Footer";
 import icon1 from "@/images/chat-anonim-img/icon-1.svg";
 import icon2 from "@/images/chat-anonim-img/icon-2.svg";

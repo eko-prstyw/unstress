@@ -43,7 +43,7 @@ export default function HomeArticle() {
           </div>
           <div className="flex justify-end">
             <button
-              onClick={() => router.push("/artikel/detailarticle")}
+              onClick={() => router.push("/artikel/detail-article")}
               className="bg-primary px-4 py-4 rounded-xl text-white"
             >
               Baca Selengkapnya
