@@ -1,5 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
+
+import ShowAndHidePassword from "@/components/page-register/ShowAndHidePassword";
 import Image from "next/image";
 import register from "@/images/register-img/register.svg";
 import icon1 from "@/images/register-img/icon-1.svg";
@@ -28,14 +30,16 @@ export default function Register() {
           Or
         </div>
         <div className="font-roboto text-[16px] ml-[65px]">Email</div>
-        <form className="mx-[65px] w-[503px] h-10 px-3 py-[9px] bg-[#F8F9FB] text-[#858C95] text-[14px] font-roboto rounded-lg border border-[#E5E5E7] justify-start items-center gap-2 inline-flex">
-          Masukan Email
-        </form>
+        <input
+          placeholder="Masukan Email"
+          className="mx-[65px] w-[503px] h-10 px-3 py-[9px] bg-[#F8F9FB] text-[#858C95] text-[14px] font-roboto rounded-lg border border-[#E5E5E7] justify-start items-center gap-2 inline-flex"
+        />
         <div className="font-roboto text-[16px] ml-[65px] mt-5">Password</div>
-        <form className="mx-[65px] w-[503px] h-10 px-3 py-[9px] bg-[#F8F9FB] text-[#858C95] text-[14px] font-roboto rounded-lg border border-[#E5E5E7] items-center gap-2 inline-flex justify-between">
+        {/* <form className="mx-[65px] w-[503px] h-10 px-3 py-[9px] bg-[#F8F9FB] text-[#858C95] text-[14px] font-roboto rounded-lg border border-[#E5E5E7] items-center gap-2 inline-flex justify-between">
           Masukan Password
           <Image src={icon2} alt="icon-2"></Image>
-        </form>
+        </form> */}
+        <ShowAndHidePassword />
         <div className="ml-[65px] flex">
           <Image src={icon3} alt="icon-1" className=" mt-4"></Image>
           <div className="font-roboto text-black mt-8 ml-[8px] text-[16px]">

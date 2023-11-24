@@ -1,5 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
+
+import ShowAndHidePassword from "@/components/page-login/ShowAndHidePassword";
 import Image from "next/image";
 import login from "@/images/login-img/login.svg";
 import icon1 from "@/images/login-img/icon-1.svg";
@@ -24,14 +26,26 @@ export default function Login() {
         </div>
         <div className="font-roboto text-[18px] ml-[65px]">di UnStress</div>
         <div className="font-roboto text-[16px] ml-[65px] mt-[39px]">Email</div>
-        <form className="ml-[65px] mr-[65px] w-[503px] h-10 px-3 py-[9px] bg-[#F8F9FB] text-[#858C95] text-[14px] font-roboto rounded-lg border border-[#E5E5E7] justify-start items-center gap-2 inline-flex">
-          Masukan Email
-        </form>
+        <input
+          type="text"
+          placeholder="Masukan Email"
+          className="ml-[65px] mr-[65px] w-[503px] h-10 px-3 py-[9px] bg-[#F8F9FB] text-[#858C95] text-[14px] font-roboto rounded-lg border border-[#E5E5E7] justify-start items-center gap-2 inline-flex"
+        />
         <div className="font-roboto text-[16px] ml-[65px] mt-5">Password</div>
-        <form className="ml-[65px] mr-[65px] w-[503px] h-10 px-3 py-[9px] bg-[#F8F9FB] text-[#858C95] text-[14px] font-roboto rounded-lg border border-[#E5E5E7] items-center gap-2 inline-flex justify-between">
-          Masukan Password
-          <Image src={icon1} alt="icon-1"></Image>
-        </form>
+        {/* <div className="relative">
+          <input
+            type="text"
+            placeholder="Masukkan Password"
+            className="ml-[65px] mr-[65px] w-[503px] h-10 px-3 py-[9px] bg-[#F8F9FB] text-[#858C95] text-[14px] font-roboto rounded-lg border border-[#E5E5E7] items-center gap-2 inline-flex justify-between"
+          />
+          <Image
+            src={icon1}
+            alt="icon-1"
+            className="absolute right-20 top-2.5"
+          />
+        </div> */}
+        <ShowAndHidePassword />
+
         <div className="ml-[65px] flex">
           <Image src={icon2} alt="icon-1" className=" mt-[38px]"></Image>
           <div className="font-roboto text-black mt-[38px] ml-[8px]">

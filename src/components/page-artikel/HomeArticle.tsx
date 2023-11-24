@@ -13,7 +13,7 @@ export default function HomeArticle() {
           <div className="relative">
             <input
               type="text"
-              className="border cursor-pointer border-neutral rounded-xl outline-none h-8 w-40 focus:border-neutral focus:cursor-text pl-9"
+              className="border border-neutral rounded-xl outline-none h-8 w-40 focus:border-neutral focus:cursor-text pl-9"
               placeholder="Seacrh"
             />
             <div className="absolute w-8 h-8 flex items-center justify-center top-0 text-neutral">
@@ -23,7 +23,7 @@ export default function HomeArticle() {
           <div className="relative">
             <input
               type="text"
-              className="border cursor-pointer border-neutral rounded-xl outline-none h-8 w-24 focus:border-neutral focus:cursor-text px-2"
+              className="border border-neutral rounded-xl outline-none h-8 w-24 focus:border-neutral focus:cursor-text px-2"
               placeholder="Sort"
             />
             <div className="absolute text-neutral w-8 h-8 flex items-center align-middle justify-center top-0 right-0">
