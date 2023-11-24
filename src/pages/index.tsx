@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
-import Article from "@/components/Article";
+import BlogArticle from "@/components/BlogArticle";
 import Features from "@/components/Features";
 import Qoutes from "@/components/Qoutes";
 import Testimoni from "@/components/Testimoni";
@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Features />
-      <Article />
+      <BlogArticle />
       <Qoutes />
       <Testimoni />
       <Footer />

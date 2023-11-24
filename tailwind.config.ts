@@ -12,6 +12,7 @@ const config: Config = {
       robotoSlab: ["Roboto Slab", "serif"],
     },
     colors: {
+      transparent: "transparent",
       black: "#161616",
       white: "#FFFFFF",
       error: "#EE2233",
@@ -166,6 +167,8 @@ const config: Config = {
       "stone-800": "#292524",
       "stone-900": "#1c1917",
       "stone-950": "#0c0a09",
+      sky: "#F2F8FD",
+      "sky-50": "#F2F8FD",
     },
     keyframes: {
       bounce: {
