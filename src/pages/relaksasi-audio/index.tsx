@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
+import ImageSwapper from "@/components/page-relaksasi-audio/ImageSwapper";
 import Layout from "@/components/Layout";
 import ToggleRain from "@/components/page-relaksasi-audio/ToggleRain";
 import ToggleThunder from "@/components/page-relaksasi-audio/ToggleThunder";
@@ -83,12 +84,14 @@ export default function index() {
               <ToggleBird />
             </div>
           </div>
+
           {/* Section: Vector Image */}
           <div className="absolute z-10 mt-[200px]">
-            <Image src={vector} alt="Gambar Vector"></Image>
+            <ImageSwapper />
+            {/* <Image src={vector} alt="Gambar Vector"></Image> */}
           </div>
           {/* Section: Vector */}
-          <div className="w-[815px] h-[0px] border-2 border-white mt-[200px]"></div>
+          <div className="w-[815px] h-[0px] border-2 border-marina-700 mt-[200px]"></div>
         </div>
       </div>
     </Layout>
