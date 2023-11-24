@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Layout from "@/components/Layout";
-import AboutUs from "@/components/page-tentang-kami/AboutUs";
+import TeamSection from "@/components/page-tentang-kami/TeamSection";
 import icon from "@/images/tentang-kami-img/icon.svg";
 import person1 from "@/images/tentang-kami-img/person-1.svg";
 import person2 from "@/images/tentang-kami-img/person-2.svg";
@@ -12,7 +12,7 @@ import person5 from "@/images/tentang-kami-img/person-5.svg";
 export default function index() {
   return (
     <Layout>
-      <AboutUs />
+      <TeamSection />
       <div className="text-[40px] font-bold text-center text-[#323539] font-robotoSlab leading-[48px] mb-16 mt-16">
         TIM KAMI
       </div>

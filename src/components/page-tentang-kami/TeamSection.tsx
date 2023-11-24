@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import aboutUs from "@/images/tentang-kami-img/about-us.svg";
 
-export default function AboutUs() {
+export default function TeamSection() {
   const router = useRouter();
   return (
     <div>
