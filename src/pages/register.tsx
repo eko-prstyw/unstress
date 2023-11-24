@@ -2,6 +2,8 @@ import React from "react";
 import { useRouter } from "next/router";
 
 import ShowAndHidePassword from "@/components/page-register/ShowAndHidePassword";
+import CheckAndUncheck from "@/components/page-login/CheckAndUncheck";
+
 import Image from "next/image";
 import register from "@/images/register-img/register.svg";
 import icon1 from "@/images/register-img/icon-1.svg";
@@ -41,7 +43,7 @@ export default function Register() {
         </form> */}
         <ShowAndHidePassword />
         <div className="ml-[65px] flex">
-          <Image src={icon3} alt="icon-1" className=" mt-4"></Image>
+          <CheckAndUncheck />
           <div className="font-roboto text-black mt-8 ml-[8px] text-[16px]">
             Dengan mengirimkan formulir, Anda menyetujui{"\n"}
             <span className="font-bold">

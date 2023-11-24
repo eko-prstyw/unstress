@@ -2,6 +2,8 @@ import React from "react";
 import { useRouter } from "next/router";
 
 import ShowAndHidePassword from "@/components/page-login/ShowAndHidePassword";
+import CheckAndUncheck from "@/components/page-login/CheckAndUncheck";
+
 import Image from "next/image";
 import login from "@/images/login-img/login.svg";
 import icon1 from "@/images/login-img/icon-1.svg";
@@ -47,7 +49,7 @@ export default function Login() {
         <ShowAndHidePassword />
 
         <div className="ml-[65px] flex">
-          <Image src={icon2} alt="icon-1" className=" mt-[38px]"></Image>
+          <CheckAndUncheck />
           <div className="font-roboto text-black mt-[38px] ml-[8px]">
             Ingat saya
           </div>
