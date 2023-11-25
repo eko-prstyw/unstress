@@ -34,18 +34,6 @@ export default function Login() {
           className="ml-[65px] mr-[65px] w-[503px] h-10 px-3 py-[9px] bg-[#F8F9FB] text-[#858C95] text-[14px] font-roboto rounded-lg border border-[#E5E5E7] justify-start items-center gap-2 inline-flex"
         />
         <div className="font-roboto text-[16px] ml-[65px] mt-5">Password</div>
-        {/* <div className="relative">
-          <input
-            type="text"
-            placeholder="Masukkan Password"
-            className="ml-[65px] mr-[65px] w-[503px] h-10 px-3 py-[9px] bg-[#F8F9FB] text-[#858C95] text-[14px] font-roboto rounded-lg border border-[#E5E5E7] items-center gap-2 inline-flex justify-between"
-          />
-          <Image
-            src={icon1}
-            alt="icon-1"
-            className="absolute right-20 top-2.5"
-          />
-        </div> */}
         <ShowAndHidePassword />
 
         <div className="ml-[65px] flex">
@@ -53,9 +41,9 @@ export default function Login() {
           <div className="font-roboto text-black mt-[38px] ml-[8px]">
             Ingat saya
           </div>
-          <div className="mt-[38px] ml-[284px] text-[#1D49D8]">
+          <button className="mt-[38px] ml-[284px] text-[#1D49D8]">
             Lupa Password?
-          </div>
+          </button>
         </div>
         <button
           type="button"
