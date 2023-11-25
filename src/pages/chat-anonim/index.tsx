@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Layout from "@/components/Layout";
+import Comments from "@/components/page-chat-anonim/Comments";
 
 import icon1 from "@/images/chat-anonim-img/icon-1.svg";
 import icon2 from "@/images/chat-anonim-img/icon-2.svg";
@@ -44,24 +45,8 @@ export default function index() {
             <div className="absolute text-black font-robotoSlab text-[24px] top-[382px] left-[80px]">
               Konsultasi
             </div>
-            <div className="absolute w-[738px] h-[820px] bg-primary-200 rounded-[10px] shadow border border-primary-300 top-[25px] right-[80px] left-[420px] bottom-[20px] flex">
-              <div className="flex absolute bottom-[40px] left-[25px] top-[725px]">
-                <div className="w-[583px] h-[50px] px-4 py-3.5 bg-[#f8fafc] rounded-tl-[1px] rounded-bl-[1px] border border-[#e4e4e7] justify-start items-center gap-2 inline-flex">
-                  <div className="grow shrink basis-0 h-[22px] justify-start items-start gap-2 flex">
-                    <div className="grow shrink basis-0 text-neutral-400 text-[15px] font-normal font-['Inter'] leading-snug">
-                      Masukkan pesan Anda
-                    </div>
-                  </div>
-                </div>
-                <button>
-                  <Image
-                    src={button}
-                    alt="button send"
-                    className="mb-1"
-                  ></Image>
-                </button>
-              </div>
-            </div>
+            <Comments />
+
             <div className="absolute left-[80px] top-[460px] flex flex-col">
               <div className="flex items-center">
                 <Image
