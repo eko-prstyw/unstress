@@ -20,7 +20,7 @@ export default function Comments() {
 
   return (
     <div>
-      <div className="absolute overflow-auto w-[738px] h-[820px] bg-primary-200 rounded-[10px] shadow border border-primary-300 top-[25px] right-[80px] left-[420px] bottom-[20px] flex">
+      <div className="absolute overflow-auto w-[738px] h-[820px] bg-marina-200 rounded-[10px] shadow border border-primary-300 top-[25px] right-[80px] left-[420px] bottom-[20px] flex">
         <div className="flex absolute left-[25px] top-[35px]">
           <div>
             <form onSubmit={handleSubmit} className="flex mb-5">

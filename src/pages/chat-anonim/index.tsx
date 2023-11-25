@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Layout from "@/components/Layout";
 import Comments from "@/components/page-chat-anonim/Comments";
@@ -12,7 +12,23 @@ import profil3 from "@/images/chat-anonim-img/profile-3.svg";
 import profil4 from "@/images/chat-anonim-img/profile-4.svg";
 import button from "@/images/chat-anonim-img/button.svg";
 
-export default function index() {
+interface YourComponentProps {}
+
+const YourComponent: React.FC<YourComponentProps> = () => {
+  const [clickedIndex, setClickedIndex] = useState<number | null>(null);
+
+  const handleClick = (index: number) => {
+    // Check if the button is already clicked
+    if (clickedIndex === index) {
+      // Reset the background color on double-click
+      setClickedIndex(null);
+    } else {
+      // Single-click, set the index
+      setClickedIndex(index);
+      // Add any other logic you want to perform on button click
+    }
+  };
+
   return (
     <Layout>
       <div className="flex flex-col min-h-screen">
@@ -48,42 +64,64 @@ export default function index() {
             <Comments />
 
             <div className="absolute left-[80px] top-[460px] flex flex-col">
-              <div className="flex items-center">
+              <button
+                className={`flex items-center border shadow border-marina-300 rounded py-2 pl-2 justify-start w-[250px] h-[65px] ${
+                  clickedIndex === 0 ? "bg-marina-200" : ""
+                }`}
+                onClick={() => handleClick(0)}
+              >
                 <Image
                   src={profil1}
                   alt="profil1"
                   className="w-[50px] h-[50px] rounded-full"
-                ></Image>
+                />
                 <div className="ml-4 font-roboto text-[18px]">Eko</div>
-              </div>
-              <div className="flex items-center mt-8">
+              </button>
+              <button
+                className={`flex items-center border shadow border-marina-300 rounded py-2 pl-2 justify-start w-[250px] h-[65px] mt-8 ${
+                  clickedIndex === 1 ? "bg-marina-200" : ""
+                }`}
+                onClick={() => handleClick(1)}
+              >
                 <Image
                   src={profil2}
                   alt="profil2"
                   className="w-[50px] h-[50px] rounded-full"
-                ></Image>
+                />
                 <div className="ml-4 font-roboto text-[18px]">Zy</div>
-              </div>
-              <div className="flex items-center mt-8">
+              </button>
+              <button
+                className={`flex items-center border shadow border-marina-300 rounded py-2 pl-2 justify-start w-[250px] h-[65px] mt-8 ${
+                  clickedIndex === 2 ? "bg-marina-200" : ""
+                }`}
+                onClick={() => handleClick(2)}
+              >
                 <Image
                   src={profil3}
                   alt="profil3"
                   className="w-[50px] h-[50px] rounded-full"
-                ></Image>
+                />
                 <div className="ml-4 font-roboto text-[18px]">Iki</div>
-              </div>
-              <div className="flex items-center mt-8">
+              </button>
+              <button
+                className={`flex items-center border shadow border-marina-300 rounded py-2 pl-2 justify-start w-[250px] h-[65px] mt-8 ${
+                  clickedIndex === 3 ? "bg-marina-200" : ""
+                }`}
+                onClick={() => handleClick(3)}
+              >
                 <Image
                   src={profil4}
                   alt="profil4"
                   className="w-[50px] h-[50px] rounded-full"
-                ></Image>
+                />
                 <div className="ml-4 font-roboto text-[18px]">Galang</div>
-              </div>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </Layout>
   );
-}
+};
+
+export default YourComponent;
