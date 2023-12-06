@@ -1,6 +1,6 @@
 import React from "react";
 import type { ReactNode } from "react";
-import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 type PropsType = {
@@ -10,7 +10,7 @@ type PropsType = {
 export default function Layout(prop: PropsType) {
   return (
     <>
-      <Navbar />
+      <Header />
       {prop.children}
       <Footer />
     </>

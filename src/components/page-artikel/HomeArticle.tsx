@@ -1,5 +1,4 @@
 import React from "react";
-import Layout from "../Layout";
 import { BsSearch } from "react-icons/bs";
 import { BsSortDown } from "react-icons/bs";
 import { BsArrowRight } from "react-icons/bs";
@@ -8,13 +7,13 @@ import { useRouter } from "next/router";
 export default function HomeArticle() {
   const router = useRouter();
   return (
-    <Layout>
+    <div>
       <div className="w-full h-[500px] px-[100px] mx-auto mt-36">
         <div className="flex gap-3 justify-end">
           <div className="relative">
             <input
               type="text"
-              className="border cursor-pointer border-neutral rounded-xl outline-none h-8 w-40 focus:border-neutral focus:cursor-text pl-9"
+              className="border border-neutral rounded-xl outline-none h-8 w-40 focus:border-neutral focus:cursor-text pl-9"
               placeholder="Seacrh"
             />
             <div className="absolute w-8 h-8 flex items-center justify-center top-0 text-neutral">
@@ -24,7 +23,7 @@ export default function HomeArticle() {
           <div className="relative">
             <input
               type="text"
-              className="border cursor-pointer border-neutral rounded-xl outline-none h-8 w-24 focus:border-neutral focus:cursor-text px-2"
+              className="border border-neutral rounded-xl outline-none h-8 w-24 focus:border-neutral focus:cursor-text px-2"
               placeholder="Sort"
             />
             <div className="absolute text-neutral w-8 h-8 flex items-center align-middle justify-center top-0 right-0">
@@ -43,7 +42,7 @@ export default function HomeArticle() {
           </div>
           <div className="flex justify-end">
             <button
-              onClick={() => router.push("/artikel/detailarticle")}
+              onClick={() => router.push("/artikel/detail-article")}
               className="bg-primary px-4 py-4 rounded-xl text-white"
             >
               Baca Selengkapnya
@@ -268,6 +267,6 @@ export default function HomeArticle() {
       <br />
       <br />
       <br />
-    </Layout>
+    </div>
   );
 }

@@ -6,7 +6,7 @@ import HeroImage2 from "../images/hero-img/pic-2.svg";
 import { BsInstagram } from "react-icons/bs";
 import { BsYoutube } from "react-icons/bs";
 
-export default function Hero() {
+export default function HeroSection() {
   const router = useRouter();
   return (
     <>

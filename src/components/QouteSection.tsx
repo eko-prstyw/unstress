@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Quotes() {
+export default function QuoteSection() {
   return (
     <div className="pt-48 bg-[#f2f2f2] w-full">
       <div className="w-full h-[550px] bg-[url('/images/qoute-img/bg-qoutes.jpg')] bg-cover bg-[center_top_-14rem] flex justify-center items-center">

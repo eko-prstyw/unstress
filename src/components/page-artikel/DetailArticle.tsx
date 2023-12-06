@@ -1,12 +1,11 @@
 import React from "react";
-import Layout from "../Layout";
 import { BsArrowRight } from "react-icons/bs";
 import { useRouter } from "next/router";
 
 export default function DetailArticle() {
   const router = useRouter();
   return (
-    <Layout>
+    <div>
       <div className="w-full mt-[90px]">
         <div className="bg-[url('/images/hero-img/woman-exercise.jpg')] bg-cover bg-[center_top_-15rem] h-[557px]"></div>
       </div>
@@ -170,6 +169,6 @@ export default function DetailArticle() {
       <br />
       <br />
       <br />
-    </Layout>
+    </div>
   );
 }

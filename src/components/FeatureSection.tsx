@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
-export default function Features() {
+export default function FeatureSection() {
   const router = useRouter();
   return (
     <div className="max-w-full bg-[#f2f2f2] px-[100px] pt-20">

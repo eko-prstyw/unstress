@@ -1,12 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+
+import ImageSwapper from "@/components/page-relaksasi-audio/ImageSwapper";
+import Layout from "@/components/Layout";
 import ToggleRain from "@/components/page-relaksasi-audio/ToggleRain";
 import ToggleThunder from "@/components/page-relaksasi-audio/ToggleThunder";
 import ToggleWave from "@/components/page-relaksasi-audio/ToggleWave";
 import ToggleWind from "@/components/page-relaksasi-audio/ToggleWind";
 import ToggleBird from "@/components/page-relaksasi-audio/ToggleBird";
+
 import bgaudio from "@/images/audio-img/audio.jpg";
 import vector from "@/images/audio-img/vector.svg";
 import icon1 from "@/images/audio-img/icon-1.svg";
@@ -27,8 +29,7 @@ export default function index() {
   };
 
   return (
-    <div>
-      <Navbar />
+    <Layout>
       {/* Section: Container Audio */}
       <div
         style={backgroundImageStyle}
@@ -83,15 +84,16 @@ export default function index() {
               <ToggleBird />
             </div>
           </div>
+
           {/* Section: Vector Image */}
           <div className="absolute z-10 mt-[200px]">
-            <Image src={vector} alt="Gambar Vector"></Image>
+            <ImageSwapper />
+            {/* <Image src={vector} alt="Gambar Vector"></Image> */}
           </div>
           {/* Section: Vector */}
-          <div className="w-[815px] h-[0px] border-2 border-white mt-[200px]"></div>
+          <div className="w-[815px] h-[0px] border-2 border-marina-700 mt-[200px]"></div>
         </div>
       </div>
-      <Footer />
-    </div>
+    </Layout>
   );
 }

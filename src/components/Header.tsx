@@ -2,7 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-export default function Navbar() {
+export default function Header() {
   const router = useRouter();
 
   return (
