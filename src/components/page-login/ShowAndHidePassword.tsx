@@ -25,14 +25,12 @@ function ShowAndHidePassword() {
         onChange={handlePasswordChange}
         value={passwordInput}
         name="password"
+        id="password"
         className="input-group ml-[65px] mr-[65px] w-[503px] h-10 px-3 py-[9px] bg-[#F8F9FB] text-[#858C95] text-[14px] font-roboto rounded-lg border border-[#E5E5E7] items-center gap-2 inline-flex justify-between"
         placeholder="Password"
       />
       <div className="input-group-btn">
-        <button
-          className="btn btn-outline-primary absolute right-20 top-3"
-          onClick={togglePassword}
-        >
+        <button className="btn btn-outline-primary absolute right-20 top-3" onClick={togglePassword}>
           {passwordType === "password" ? <BiHide /> : <BiShow />}
         </button>
       </div>
