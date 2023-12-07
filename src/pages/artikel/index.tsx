@@ -1,10 +1,11 @@
 import React from "react";
-import DetailArticle from "@/components/DetailArticle";
+import Layout from "@/components/Layout";
+import HomeArticle from "@/components/page-artikel/HomeArticle";
 
 export default function index() {
   return (
-    <>
-      <DetailArticle />
-    </>
+    <Layout>
+      <HomeArticle />
+    </Layout>
   );
 }

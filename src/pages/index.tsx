@@ -1,22 +1,18 @@
-import Image from "next/image";
-import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
-import Article from "@/components/Article";
-import Features from "@/components/Features";
-import Qoutes from "@/components/Qoutes";
-import Testimoni from "@/components/Testimoni";
-import Footer from "@/components/Footer";
+import Hero from "@/components/HeroSection";
+import Layout from "@/components/Layout";
+import Article from "@/components/ArticleSection";
+import Features from "@/components/FeatureSection";
+import Qoutes from "@/components/QouteSection";
+import Testimony from "@/components/TestimonySection";
 
-export default function Home() {
+export default function Main() {
   return (
-    <>
-      <Navbar />
+    <Layout>
       <Hero />
       <Features />
       <Article />
       <Qoutes />
-      <Testimoni />
-      <Footer />
-    </>
+      <Testimony />
+    </Layout>
   );
 }

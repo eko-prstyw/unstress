@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nama": "Eko",
+    "role": "Coder",
+    "desc": "Seorang yang ambisius, merelakan MBKM nya demi menamatkan Brida School."
+  },
+  {
+    "id": 2,
+    "nama": "Eko",
+    "role": "Coder",
+    "desc": "Dengan skill codingnya yang berada, di atas rata-rata, Zy mampu menumpaskan seluruh penjahat di muka bumi ini."
+  },
+  {
+    "id": 3,
+    "nama": "Iki",
+    "role": "UI/UX Designer",
+    "desc": "Seorang designer yang stress setiap saat, mampu membuat lawannya tertawa terbahak-bahak."
+  },
+  {
+    "id": 4,
+    "nama": "Galang",
+    "role": "UI/UX Designer",
+    "desc": "Seorang pecinta kuliner yang memakan segala jenis hewan, kalajengking pun dimakan satu piring tanpa sisa."
+  },
+  {
+    "id": 5,
+    "nama": "Aluh",
+    "role": "UI/UX Designer",
+    "desc": "Seorang pendatang baru yang menyukai tantangan dan ingin menambah stres."
+  }
+]
