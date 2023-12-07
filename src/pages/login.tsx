@@ -6,8 +6,6 @@ import CheckAndUncheck from "@/components/page-login/CheckAndUncheck";
 
 import Image from "next/image";
 import login from "@/images/login-img/login.svg";
-import icon1 from "@/images/login-img/icon-1.svg";
-import icon2 from "@/images/login-img/icon-2.svg";
 import axios from "axios";
 
 export default function Login() {
